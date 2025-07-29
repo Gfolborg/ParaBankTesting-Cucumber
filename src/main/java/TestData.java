@@ -1,4 +1,4 @@
-public interface AppData {
+public interface TestData {
 
     String BROWSER_TYPE = "Chrome";
     String VALID_FIRSTNAME = "Jane";
