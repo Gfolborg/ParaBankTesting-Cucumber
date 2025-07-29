@@ -19,4 +19,4 @@ I want to demonstrate real world BDD practices with the Page Object Model (POM) 
 - IntelliJ IDEA
 - Maven (for dependencies)
 
-If youu're a recruiter or hiring manager, feel free to reach out or view my other QA projects on [my GitHub profile](https://github.com/Gfolborg)
+If you're a recruiter or hiring manager, feel free to reach out or view my other QA projects on [my GitHub profile](https://github.com/Gfolborg)
