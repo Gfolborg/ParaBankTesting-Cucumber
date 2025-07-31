@@ -1,12 +1,16 @@
+package Pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.openqa.selenium.support.PageFactory;
+
+
+import java.io.File;
 
 public class CommonActions {
-    WebDriver driver;
+    static WebDriver driver;
     public CommonActions(WebDriver driver){
         this.driver=driver;
     }
@@ -15,18 +19,27 @@ public class CommonActions {
         switch (BROWSER_TYPE) {
             case "Chrome":
                 driver=new ChromeDriver();
+                break;
             case "Edge":
                 driver=new EdgeDriver();
+                break;
             case "Firefox":
                 driver=new FirefoxDriver();
+                break;
             case "Internet Explorer":
                 driver=new InternetExplorerDriver();
+                break;
         }
-                return driver;
+        return driver;
     }
+
 
     public void closeBrowser(){
         driver.quit();
+    }
+
+    public void enterUrl(String url){
+        driver.get(url);
     }
 
 }

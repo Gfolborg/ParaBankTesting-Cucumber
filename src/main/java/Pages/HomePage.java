@@ -1,6 +1,7 @@
+package Pages;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.devtools.v136.page.Page;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -26,13 +27,13 @@ public class HomePage {
 
     @FindBy(css = "input.button[value='Log In']")
     WebElement loginButton;
-    public void loginButton(){
+    public void clickLoginButton(){
         loginButton.click();
     }
 
-    @FindBy(xpath = "//input[text()='Register']")
+    @FindBy(xpath = "//a[contains(@href, 'register')]")
     WebElement registerButton;
-    public void registerButton(){
+    public void clickRegisterButton(){
         registerButton.click();
     }
 }

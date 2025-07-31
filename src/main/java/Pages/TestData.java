@@ -1,5 +1,8 @@
+package Pages;
+
 public interface TestData {
 
+    String URL = "https://parabank.parasoft.com/parabank/index.htm";
     String BROWSER_TYPE = "Chrome";
     String VALID_FIRSTNAME = "Jane";
     String VALID_LASTNAME = "Doe";
